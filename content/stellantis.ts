@@ -28,11 +28,11 @@ function make(l: Locale): CaseStudy {
         blocks: [
           {
             type: 'gallery',
-            note: T('El video se muestra con su fotograma de portada y el carrusel con su primera imagen.', 'The video is shown with its cover frame and the carousel with its first image.'),
+            note: T('El carrusel se muestra con su primera imagen.', 'The carousel is shown with its first image.'),
             items: [
               { src: `${base}/jeep-01.jpg`, alt: T('Jeep Renegade blanco en un camino de montaña con nieve', 'White Jeep Renegade on a snowy mountain road'), date: '2020-06-18', href: ig('CBjmv3DBlUf'), caption: T('Disfruta de la comodidad y tecnología de #JeepRenegade con los controles de audio integrados al volante. #jeep #offroad #renegade #jeepchile', 'Enjoy the comfort and technology of the #JeepRenegade with audio controls built into the steering wheel. #jeep #offroad #renegade #jeepchile') },
-              { src: `${base}/jeep-02.jpg`, alt: T('Pieza de Jeep en Valle Nevado', 'Jeep piece at Valle Nevado'), date: '2021-07-09', video: true, href: ig('CRHFq0cLz7t'), caption: T('Mantengamos vivo nuestro espíritu aventurero junto a @Valle_Nevado 🏂 #WinterIsJeep', 'Let\'s keep our adventurous spirit alive with @Valle_Nevado 🏂 #WinterIsJeep') },
-              { src: `${base}/jeep-03.jpg`, alt: T('Pieza de Jeep Wrangler', 'Jeep Wrangler piece'), date: '2021-09-22', caption: T('No importa donde te lleve el mundo, siempre vas de frente con el audaz #JeepWrangler ⚡', 'No matter where the world takes you, you always go straight ahead with the bold #JeepWrangler ⚡') },
+              { src: `${base}/jeep-02.jpg`, href: ig('CRHFq0cLz7t'), alt: T('Pieza de Jeep en Valle Nevado', 'Jeep piece at Valle Nevado'), date: '2021-07-09', videoSrc: '/projects/stellantis/jeep-02.mp4', caption: T('Mantengamos vivo nuestro espíritu aventurero junto a @Valle_Nevado 🏂 #WinterIsJeep', 'Let\'s keep our adventurous spirit alive with @Valle_Nevado 🏂 #WinterIsJeep') },
+              { src: `${base}/jeep-03.jpg`, href: ig('CUIMXCLgg7V'), alt: T('Pieza de Jeep Wrangler', 'Jeep Wrangler piece'), date: '2021-09-22', caption: T('No importa donde te lleve el mundo, siempre vas de frente con el audaz #JeepWrangler ⚡', 'No matter where the world takes you, you always go straight ahead with the bold #JeepWrangler ⚡') },
             ],
           },
         ],
@@ -44,11 +44,10 @@ function make(l: Locale): CaseStudy {
         blocks: [
           {
             type: 'gallery',
-            note: T('Las piezas en video se muestran con su fotograma de portada.', 'Video pieces are shown with their cover frame.'),
             items: [
-              { src: `${base}/ram-01.jpg`, alt: T('Pick up RAM 1500 gris frente a un paisaje de montañas', 'Gray RAM 1500 pickup in front of a mountain landscape'), date: '2021-07-06', caption: T('Carga hasta 803 Kg. y realiza tu trabajo sin problemas. Sólo #RAM1500, te entregará esa seguridad. Guarda esta publicación para que puedas revisarla cuando estés buscando tu próxima Pick Up RAM. 😉 #PickUp #RAMChile', 'Carry up to 803 kg and do your job without problems. Only the #RAM1500 will give you that security. Save this post so you can review it when you\'re looking for your next RAM pickup. 😉 #PickUp #RAMChile') },
-              { src: `${base}/ram-02.jpg`, alt: T('Pieza de la RAM 2500', 'RAM 2500 piece'), date: '2021-08-12', video: true, href: ig('CSeoZT7BStA'), caption: T('Con la #RAM2500 podrás cargar lo que creías imposible. ¿Listo para llevar tus tareas a cabo?', 'With the #RAM2500 you can haul what you thought was impossible. Ready to get your tasks done?') },
-              { src: `${base}/ram-03.jpg`, alt: T('Pieza de la RAM 1000', 'RAM 1000 piece'), date: '2021-11-18', video: true, href: ig('CWa3XH1jSWU'), caption: T('Sin duda, cuando tienes una #RAM1000, ¡lo tienes todo!', 'No doubt, when you have a #RAM1000, you have it all!') },
+              { src: `${base}/ram-01.jpg`, href: ig('CQ_W7KTFCy1'), alt: T('Pick up RAM 1500 gris frente a un paisaje de montañas', 'Gray RAM 1500 pickup in front of a mountain landscape'), date: '2021-07-06', caption: T('Carga hasta 803 Kg. y realiza tu trabajo sin problemas. Sólo #RAM1500, te entregará esa seguridad. Guarda esta publicación para que puedas revisarla cuando estés buscando tu próxima Pick Up RAM. 😉 #PickUp #RAMChile', 'Carry up to 803 kg and do your job without problems. Only the #RAM1500 will give you that security. Save this post so you can review it when you\'re looking for your next RAM pickup. 😉 #PickUp #RAMChile') },
+              { src: `${base}/ram-02.jpg`, href: ig('CSeoZT7BStA'), alt: T('Pieza de la RAM 2500', 'RAM 2500 piece'), date: '2021-08-12', videoSrc: '/projects/stellantis/ram-02.mp4', caption: T('Con la #RAM2500 podrás cargar lo que creías imposible. ¿Listo para llevar tus tareas a cabo?', 'With the #RAM2500 you can haul what you thought was impossible. Ready to get your tasks done?') },
+              { src: `${base}/ram-03.jpg`, href: ig('CWa3XH1jSWU'), alt: T('Pieza de la RAM 1000', 'RAM 1000 piece'), date: '2021-11-18', videoSrc: '/projects/stellantis/ram-03.mp4', caption: T('Sin duda, cuando tienes una #RAM1000, ¡lo tienes todo!', 'No doubt, when you have a #RAM1000, you have it all!') },
             ],
           },
         ],

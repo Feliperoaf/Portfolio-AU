@@ -20,7 +20,7 @@ export default function Skills({ locale }: { locale: 'es' | 'en' }) {
   return (
     <section className={styles.skills}>
       <div className={`container ${styles.inner}`}>
-        <p className="label">{locale === 'es' ? 'Herramientas' : 'Tools'}</p>
+        <h2 className="label">{locale === 'es' ? 'Herramientas' : 'Tools'}</h2>
         <ul className={styles.grid}>
           {skillsData.map((s) => (
             <li key={s.name} className={styles.item}>

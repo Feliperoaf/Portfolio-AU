@@ -432,9 +432,25 @@ function make(l: Locale): CaseStudy {
   return {
     meta: [
       T('Diseñador UX/UI', 'UX/UI Designer'),
-      T('Encargo del Instituto Nacional de Estadísticas (INE)', 'Commissioned by the National Statistics Institute (INE)'),
-      T('Equipo UX/UI: María José Garrido · Felipe Roa · Carolina Hidalgo', 'UX/UI team: María José Garrido · Felipe Roa · Carolina Hidalgo'),
+      T('Encargo del Instituto Nacional de Estadísticas (INE), Gobierno de Chile', 'Commissioned by the National Statistics Institute (INE), Government of Chile'),
       '2023',
+    ],
+    glance: [
+      { label: T('Rol', 'Role'), value: T('Diseñador UX/UI', 'UX/UI Designer') },
+      { label: T('Cliente', 'Client'), value: T('Instituto Nacional de Estadísticas (INE), Gobierno de Chile', 'National Statistics Institute (INE), Government of Chile') },
+      { label: T('Alcance', 'Scope'), value: T('Evaluación heurística del sitio del Censo con las 10 heurísticas de Nielsen (30 reglas), escala SUS y cuestionarios abiertos', 'Heuristic evaluation of the Census website using Nielsen\'s 10 heuristics (30 rules), the SUS scale and open-ended questionnaires') },
+      { label: T('Resultado', 'Outcome'), value: T('SUS de 75 en escritorio y 85 en móvil, y 6 recomendaciones finales', 'SUS of 75 on desktop and 85 on mobile, and 6 final recommendations') },
+    ],
+    toc: [
+      { id: 'summary', label: T('Resultados', 'Results') },
+      { id: 'context', label: T('Contexto', 'Context') },
+      { id: 'method', label: T('Método', 'Method') },
+      { id: 'h1', label: T('Hallazgos por heurística', 'Findings by heuristic') },
+      { id: 'results', label: T('Resultado heurístico', 'Heuristic results') },
+      { id: 'sus', label: 'SUS' },
+      { id: 'opinions', label: T('Opiniones', 'User opinions') },
+      { id: 'empathy', label: T('Mapa de empatía', 'Empathy map') },
+      { id: 'recommendations', label: T('Recomendaciones', 'Recommendations') },
     ],
     hero: {
       src: `${base}/cover.jpg`,

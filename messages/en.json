@@ -10,11 +10,12 @@
     "greeting": "Hi, I'm",
     "title": "Felipe Roa",
     "subtitle": "Art Director, UX/UI Designer & Advertiser",
-    "description": "I transform ideas into impactful visual experiences"
+    "description": "I transform ideas into impactful visual experiences",
+    "availability": "Based in Australia, open to roles"
   },
   "about": {
-    "title": "About Me",
-    "bio": "I'm a designer with 8 years of experience in branding, user experience design and art direction. I've worked with brands like Capel and Banco Santander, creating content, graphic pieces and digital experiences.",
+    "title": "About me",
+    "bio": "I'm Felipe, a designer with **8 years of experience** in art direction, UX/UI and social media. I've worked on brands like **Stellantis (Jeep, RAM, Dodge and Alfa Romeo), Capel and Banco Santander**, turning briefs into graphic pieces, content and digital experiences. After a break to travel and live in Germany and Denmark, I'm back to design from Australia.",
     "experience": "My expertise includes:",
     "skills": [
       "Branding & Visual Identity",
@@ -61,11 +62,11 @@
     },
     "groups": {
       "ux": "UX/UI",
-      "graphic": "Graphic Design"
+      "graphic": "Graphic design"
     }
   },
   "contact": {
-    "title": "Get in Touch",
+    "title": "Get in touch",
     "subtitle": "Tell me about your project",
     "email": "feliperoaf@outlook.com",
     "cta": "Send Message"

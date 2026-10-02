@@ -21,7 +21,7 @@ export function getProjectImages(slug: string, locale: Locale): string[] {
     .map((f) => `${urlBase}/${f}`);
 }
 
-export type Collaborator = { name: string; url: string; avatar: string };
+export type Collaborator = { name: string; url?: string; avatar?: string };
 
 export const marieGarrido: Collaborator = {
   name: 'Marie Garrido',
@@ -29,8 +29,19 @@ export const marieGarrido: Collaborator = {
   avatar: '/people/mariegarrido.jpg',
 };
 
+export const carolinaHidalgo: Collaborator = { name: 'Carolina Hidalgo' };
+
 export const collaborators: Record<string, Collaborator[]> = {
   avsa: [marieGarrido],
-  censo: [marieGarrido],
+  censo: [marieGarrido, carolinaHidalgo],
   'ux-report': [marieGarrido],
+};
+
+export const projectGroup: Record<string, { key: 'ux' | 'graphic'; anchor: string }> = {
+  avsa: { key: 'ux', anchor: 'ux-ui' },
+  censo: { key: 'ux', anchor: 'ux-ui' },
+  'ux-report': { key: 'ux', anchor: 'ux-ui' },
+  capel: { key: 'graphic', anchor: 'graphic-design' },
+  capelsour: { key: 'graphic', anchor: 'graphic-design' },
+  stellantis: { key: 'graphic', anchor: 'graphic-design' },
 };

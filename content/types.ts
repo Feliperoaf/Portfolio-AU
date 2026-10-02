@@ -15,7 +15,7 @@ export type Block =
   | { type: 'survey'; groups: { question: string; items: { quote: string; insight: string }[] }[] }
   | { type: 'groups'; items: { title: string; points: string[] }[] }
   | { type: 'quote'; text: string; cite: string }
-  | { type: 'gallery'; items: { src: string; alt: string; caption: string; date: string; video?: boolean; href?: string }[]; note?: string }
+  | { type: 'gallery'; items: { src: string; alt: string; caption: string; date: string; videoSrc?: string; href?: string }[]; note?: string }
   | { type: 'image'; src: string; alt: string; caption?: string; cropTop?: number; width?: number };
 
 export type Section = { id: string; title: string; subtitle?: string; blocks: Block[] };
@@ -23,5 +23,8 @@ export type Section = { id: string; title: string; subtitle?: string; blocks: Bl
 export type CaseStudy = {
   meta: string[];
   hero: { src: string; alt: string };
+  source?: { name: string; href: string };
+  glance?: { label: string; value: string }[];
+  toc?: { id: string; label: string }[];
   sections: Section[];
 };

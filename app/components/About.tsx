@@ -9,8 +9,10 @@ export default function About({ about }: AboutProps) {
   return (
     <section className={styles.about} id="about">
       <div className={`container ${styles.inner}`}>
-        <p className="label">{about.title}</p>
-        <p className={styles.bio}>{about.bio}</p>
+        <h2 className="label">{about.title}</h2>
+        <p className={styles.bio}>
+          {about.bio.split('**').map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part))}
+        </p>
         <div className={styles.skills}>
           <p className="label">{about.experience}</p>
           <ul>

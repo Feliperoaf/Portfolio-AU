@@ -21,11 +21,10 @@ function make(l: Locale): CaseStudy {
         blocks: [
           {
             type: 'gallery',
-            note: T('Las piezas en video se muestran con su fotograma de portada.', 'Video pieces are shown with their cover frame.'),
             items: [
-              { src: '/projects/capelsour/03.jpg', alt: T('Capel Sour Limón', 'Capel Sour Lemon'), date: '2020-12-17', caption: T('Así de refrescante es nuestro Capel Sour Limón 🍋💦 ¿Y si nos sumergimos en su suave sabor?', 'That\'s how refreshing our Capel Sour Lemon is 🍋💦 What if we dive into its smooth flavor?') },
-              { src: '/projects/capelsour/02.jpg', alt: T('Cóctel Capel Sour con ilustraciones: limón, risas, llamadas de amigas y momentos increíbles', 'Capel Sour cocktail with annotations: lemon, laughter, calls with friends and incredible moments'), date: '2021-05-11', caption: T('Limón, risas y @Capelpisco estos fueron los ingredientes elegidos para crear el Sour perfecto ✨ 😍 #CapelSourYMix', 'Lemon, laughter and @Capelpisco: these were the ingredients chosen to create the perfect Sour ✨ 😍 #CapelSourYMix') },
-              { src: '/projects/capelsour/01.jpg', alt: T('Pieza de Capel Sour para Instagram', 'Capel Sour piece for Instagram'), date: '2021-05-28', video: true, href: ig('CPbmnZcHVVs'), caption: T('Team cítricos o team dulces 🤭 ¡Prueba ambas variedades para decidir! No te arrepentirás 😉', 'Team citrus or team sweet 🤭 Try both varieties to decide! You won\'t regret it 😉') },
+              { src: '/projects/capelsour/03.jpg', href: ig('CI6qJZYF-ZO'), alt: T('Capel Sour Limón', 'Capel Sour Lemon'), date: '2020-12-17', caption: T('Así de refrescante es nuestro Capel Sour Limón 🍋💦 ¿Y si nos sumergimos en su suave sabor?', 'That\'s how refreshing our Capel Sour Lemon is 🍋💦 What if we dive into its smooth flavor?') },
+              { src: '/projects/capelsour/02.jpg', href: ig('COv41lrhRYC'), alt: T('Cóctel Capel Sour con ilustraciones: limón, risas, llamadas de amigas y momentos increíbles', 'Capel Sour cocktail with annotations: lemon, laughter, calls with friends and incredible moments'), date: '2021-05-11', caption: T('Limón, risas y @Capelpisco estos fueron los ingredientes elegidos para crear el Sour perfecto ✨ 😍 #CapelSourYMix', 'Lemon, laughter and @Capelpisco: these were the ingredients chosen to create the perfect Sour ✨ 😍 #CapelSourYMix') },
+              { src: '/projects/capelsour/01.jpg', href: ig('CPbmnZcHVVs'), alt: T('Pieza de Capel Sour para Instagram', 'Capel Sour piece for Instagram'), date: '2021-05-28', videoSrc: '/projects/capelsour/01.mp4', caption: T('Team cítricos o team dulces 🤭 ¡Prueba ambas variedades para decidir! No te arrepentirás 😉', 'Team citrus or team sweet 🤭 Try both varieties to decide! You won\'t regret it 😉') },
             ],
           },
         ],

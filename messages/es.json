@@ -10,11 +10,12 @@
     "greeting": "Hola, soy",
     "title": "Felipe Roa",
     "subtitle": "Publicista, Director de Arte y Diseñador UX/UI",
-    "description": "Transformo ideas en experiencias visuales impactantes"
+    "description": "Transformo ideas en experiencias visuales impactantes",
+    "availability": "Desde Australia, abierto a oportunidades"
   },
   "about": {
     "title": "Sobre mí",
-    "bio": "Soy diseñador con 8 años de experiencia en branding, diseño de experiencia de usuario y dirección de arte. He trabajado con marcas como Capel y Banco Santander, creando contenido, piezas gráficas y experiencias digitales.",
+    "bio": "Soy Felipe, diseñador con **8 años de experiencia** en dirección de arte, UX/UI y redes sociales. He trabajado con marcas como **Stellantis (Jeep, RAM, Dodge y Alfa Romeo), Capel y Banco Santander**, convirtiendo briefs en piezas gráficas, contenido y experiencias digitales. Tras una pausa para viajar y vivir en Alemania y Dinamarca, vuelvo al diseño desde Australia.",
     "experience": "Mi experiencia incluye:",
     "skills": [
       "Branding & Identidad Visual",

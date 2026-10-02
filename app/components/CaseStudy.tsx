@@ -185,8 +185,14 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
           <div className={styles.gallery}>
             {block.items.map((g) => (
               <figure key={g.src} className={styles.post}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={g.src} alt={g.alt} loading="lazy" />
+                {g.videoSrc ? (
+                  <video controls playsInline preload="metadata" poster={g.src} aria-label={g.alt}>
+                    <source src={g.videoSrc} type="video/mp4" />
+                  </video>
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={g.src} alt={g.alt} loading="lazy" />
+                )}
                 <figcaption>
                   <time dateTime={g.date}>
                     {new Date(g.date + 'T12:00:00Z').toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
@@ -194,9 +200,7 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
                   <span>{g.caption}</span>
                   {g.href && (
                     <a href={g.href} target="_blank" rel="noopener noreferrer">
-                      {g.video
-                        ? locale === 'es' ? 'Ver el video en Instagram ↗' : 'Watch the video on Instagram ↗'
-                        : locale === 'es' ? 'Ver la publicación completa en Instagram ↗' : 'See the full post on Instagram ↗'}
+                      {locale === 'es' ? 'Ver en Instagram ↗' : 'View on Instagram ↗'}
                     </a>
                   )}
                 </figcaption>
@@ -227,6 +231,27 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
 export default function CaseStudy({ study, locale = 'en' }: { study: CaseStudyData; locale?: 'es' | 'en' }) {
   return (
     <>
+      {study.glance && (
+        <dl className={styles.glance}>
+          {study.glance.map((g) => (
+            <div key={g.label}>
+              <dt>{g.label}</dt>
+              <dd>{g.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {study.toc && (
+        <nav aria-label={locale === 'es' ? 'En este caso' : 'In this case'} className={styles.toc}>
+          <ul>
+            {study.toc.map((t) => (
+              <li key={t.id}>
+                <a href={`#${t.id}`}>{t.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
       <div className={styles.hero}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={study.hero.src} alt={study.hero.alt} />
@@ -238,6 +263,13 @@ export default function CaseStudy({ study, locale = 'en' }: { study: CaseStudyDa
           {s.blocks.map((b, i) => renderBlock(b, i, locale))}
         </section>
       ))}
+      {study.source && (
+        <p className={styles.source}>
+          <a href={study.source.href} target="_blank" rel="noopener noreferrer">
+            {locale === 'es' ? `Ver en ${study.source.name} ↗` : `View on ${study.source.name} ↗`}
+          </a>
+        </p>
+      )}
     </>
   );
 }

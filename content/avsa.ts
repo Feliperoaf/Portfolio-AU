@@ -5,6 +5,23 @@ const HEADER_CROP = 900 / 2800;
 
 const es: CaseStudy = {
   meta: ['Diseñador UX/UI', 'Laika, agencia digital de Dittborn & Unzueta', '2023'],
+  glance: [
+    { label: 'Rol', value: 'Diseñador UX/UI' },
+    { label: 'Agencia', value: 'Laika, agencia digital de Dittborn & Unzueta' },
+    { label: 'Contexto', value: 'Sitio web de AVSA Rent a Car, en Chiloé' },
+    { label: 'Alcance', value: 'Landing de una página: sistema visual, componentes reutilizables, textos reescritos, un FAQ nuevo y contacto directo, en versión escritorio y móvil' },
+    { label: 'Resultado', value: 'Una interfaz más ordenada, comprensible y coherente con las necesidades reales del usuario' },
+    { label: 'Límite', value: 'Sin investigación UX, entrevistas ni pruebas con usuarios' },
+  ],
+  toc: [
+    { id: 'context', label: 'Contexto' },
+    { id: 'scope', label: 'Alcance' },
+    { id: 'process', label: 'Proceso' },
+    { id: 'ui', label: 'Diseño UI' },
+    { id: 'before', label: 'Antes' },
+    { id: 'desktop', label: 'Escritorio' },
+    { id: 'mobile', label: 'Móvil' },
+  ],
   hero: { src: `${base}/cover.jpg`, alt: 'AVSA Rent a Car: pantallas móviles del rediseño' },
   sections: [
     {
@@ -135,6 +152,23 @@ const es: CaseStudy = {
 
 const en: CaseStudy = {
   meta: ['UX/UI Designer', 'Laika, the digital agency of Dittborn & Unzueta', '2023'],
+  glance: [
+    { label: 'Role', value: 'UX/UI Designer' },
+    { label: 'Agency', value: 'Laika, the digital agency of Dittborn & Unzueta' },
+    { label: 'Context', value: 'Website for AVSA Rent a Car, in Chiloé' },
+    { label: 'Scope', value: 'One-page landing: visual system, reusable components, rewritten copy, a new FAQ and direct contact, in desktop and mobile versions' },
+    { label: 'Outcome', value: 'A more orderly, understandable interface that fits the real needs of users' },
+    { label: 'Limit', value: 'No UX research, interviews or user testing' },
+  ],
+  toc: [
+    { id: 'context', label: 'Context' },
+    { id: 'scope', label: 'Scope' },
+    { id: 'process', label: 'Process' },
+    { id: 'ui', label: 'UI design' },
+    { id: 'before', label: 'Before' },
+    { id: 'desktop', label: 'Desktop' },
+    { id: 'mobile', label: 'Mobile' },
+  ],
   hero: { src: `${base}/cover.jpg`, alt: 'AVSA Rent a Car: mobile screens of the redesign' },
   sections: [
     {
