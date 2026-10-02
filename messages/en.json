@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Felipe Roa",
+    "subtitle": "Art Director, UX/UI Designer & Advertiser",
+    "description": "I transform ideas into impactful visual experiences"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I'm a designer with 8 years of experience in branding, user experience design and art direction. I've worked with brands like Capel and Banco Santander, creating content, graphic pieces and digital experiences.",
+    "experience": "My expertise includes:",
+    "skills": [
+      "Branding & Visual Identity",
+      "UX/UI Design",
+      "Art Direction",
+      "Interface Design",
+      "Usability Audits",
+      "Email Marketing Design"
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": {
+      "capel": {
+        "title": "Capel Pisco",
+        "description": "Art director and graphic producer for the social media content of Capel Pisco, at the agency Dittborn & Unzueta, Chile.",
+        "year": "2020 – 2021"
+      },
+      "capelsour": {
+        "title": "CapelSour",
+        "description": "Art director and graphic producer for the social media content of CapelSour, Capel's cocktail line, at the agency Dittborn & Unzueta, Chile.",
+        "year": "2020 – 2021"
+      },
+      "stellantis": {
+        "title": "Stellantis",
+        "description": "Art director and graphic producer on the social media of Stellantis brands in Chile (RAM, Dodge, Jeep and Alfa Romeo), at the agency Dittborn & Unzueta.",
+        "year": "2020 – 2021"
+      },
+      "avsa": {
+        "title": "AVSA Rent a Car – UI/UX Redesign",
+        "description": "Redesign of a car rental website in Chiloé, focused on visual improvement and basic usability principles. It included updated content, a clearer visual identity, contextual imagery, a new FAQ module and a direct contact channel to make renting easier.",
+        "year": "2023"
+      },
+      "censo": {
+        "title": "Usability Audit – Census 2024",
+        "description": "Heuristic evaluation and usability audit of the Census 2024 website, including web analysis, usability testing and the SUS scale.",
+        "year": "2023"
+      },
+      "ux-report": {
+        "title": "UX Report – Findings and Improvement Suggestions",
+        "description": "Initial review of the Carnes A Punto and Carnes a Domicilio websites to identify opportunities to improve navigation, content and architecture. It gathers key observations, competitor best practices and visual recommendations.",
+        "year": "2023"
+      }
+    },
+    "groups": {
+      "ux": "UX/UI",
+      "graphic": "Graphic Design"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Tell me about your project",
+    "email": "feliperoaf@outlook.com",
+    "cta": "Send Message"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "behance": "Behance",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "resume": {
+    "title": "Resume",
+    "experience": "Experience",
+    "education": "Education & certifications",
+    "jobs": [
+      {
+        "role": "Digital Art Director & UX/UI Designer",
+        "org": "Dittborn & Unzueta (Laika)",
+        "years": "2019 – 2025"
+      },
+      {
+        "role": "Art Director",
+        "org": "Gentuza",
+        "years": "2018 – 2019"
+      },
+      {
+        "role": "Art Director Trainee",
+        "org": "Wolf BCPP",
+        "years": "2018"
+      }
+    ],
+    "studies": [
+      {
+        "role": "Full Stack JavaScript",
+        "org": "Desafío Latam",
+        "years": "2024 – 2026"
+      },
+      {
+        "role": "UX/UI Design",
+        "org": "Desafío Latam",
+        "years": "2019"
+      },
+      {
+        "role": "Advertising",
+        "org": "Universidad Diego Portales",
+        "years": "2014 – 2018"
+      }
+    ]
+  }
+}

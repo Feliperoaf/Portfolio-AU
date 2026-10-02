@@ -1,0 +1,11 @@
+.hero { padding-block: clamp(4rem, 12vw, 9rem) clamp(3rem, 8vw, 6rem); }
+.inner { display: flex; flex-direction: column; gap: 1.75rem; }
+.title { font-size: clamp(3.5rem, 15vw, 12rem); font-weight: 800; letter-spacing: -0.065em; line-height: 0.88; font-variation-settings: 'opsz' 40; }
+.title span { font-weight: 300; }
+.title mark { background: var(--accent); color: var(--accent-ink); padding: 0 0.08em; margin-left: -0.04em; border-radius: 0.04em; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; align-items: start; border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 1rem; }
+.subtitle { font-size: clamp(1.15rem, 2.2vw, 1.6rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; }
+.description { font-size: clamp(1.05rem, 1.6vw, 1.25rem); font-weight: 300; color: var(--muted); max-width: 34ch; }
+.cta { width: fit-content; font-family: var(--font-label); font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--accent); padding-bottom: 0.2rem; transition: background 200ms, color 200ms; }
+.cta:hover { background: var(--accent); color: var(--accent-ink); }
+@media (max-width: 720px) { .row { grid-template-columns: minmax(0, 1fr); } }

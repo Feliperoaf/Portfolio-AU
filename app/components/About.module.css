@@ -1,0 +1,6 @@
+.about { padding-block: clamp(4rem, 9vw, 8rem); border-top: 1px solid var(--line); }
+.inner { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+.bio { font-size: clamp(1.5rem, 3.4vw, 2.75rem); font-weight: 300; line-height: 1.2; letter-spacing: -0.03em; max-width: 24ch; text-wrap: pretty; max-width: 30ch; }
+.skills { display: flex; flex-direction: column; gap: 1rem; }
+.skills ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 2rem; max-width: 900px; }
+.skills li { padding-block: 0.8rem; border-top: 1px solid var(--line); font-weight: 500; letter-spacing: -0.01em; }

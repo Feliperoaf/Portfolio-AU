@@ -1,0 +1,15 @@
+.page { max-width: var(--max); margin-inline: auto; padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) clamp(4rem, 8vw, 6rem); min-height: 70vh; }
+.back { font-family: var(--font-label); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); display: inline-block; margin-bottom: clamp(2rem, 5vw, 3.5rem); transition: color 200ms; }
+.back:hover { color: var(--fg); }
+.header { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); max-width: 1000px; }
+.header h1 { font-size: clamp(2.5rem, 8vw, 6.5rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.92; text-wrap: balance; }
+.header p { color: var(--muted); font-weight: 300; font-size: clamp(1.05rem, 1.7vw, 1.3rem); max-width: 62ch; line-height: 1.55; }
+.year { font-family: var(--font-label); font-size: 0.8rem; letter-spacing: 0.08em; color: var(--muted); }
+.meta { font-family: var(--font-label); font-size: 0.78rem !important; letter-spacing: 0.04em; color: var(--fg) !important; font-weight: 400 !important; text-transform: uppercase; }
+.gallery { display: flex; flex-direction: column; gap: 1.5rem; }
+.gallery img { width: 100%; height: auto; display: block; }
+.empty { color: var(--muted); padding: 3rem 0; }
+.collab { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; color: var(--muted); font-family: var(--font-label); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; margin-top: 0.5rem; }
+.collabLink { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--fg); padding: 0.2rem 0.8rem 0.2rem 0.2rem; border: 1px solid var(--line); border-radius: 999px; transition: background 200ms, border-color 200ms; }
+.collabLink:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.collabLink img { width: 1.75rem; height: 1.75rem; border-radius: 50%; object-fit: cover; }

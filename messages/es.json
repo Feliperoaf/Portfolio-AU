@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "portfolio": "Portafolio",
+    "resume": "Currículum",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Felipe Roa",
+    "subtitle": "Publicista, Director de Arte y Diseñador UX/UI",
+    "description": "Transformo ideas en experiencias visuales impactantes"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "bio": "Soy diseñador con 8 años de experiencia en branding, diseño de experiencia de usuario y dirección de arte. He trabajado con marcas como Capel y Banco Santander, creando contenido, piezas gráficas y experiencias digitales.",
+    "experience": "Mi experiencia incluye:",
+    "skills": [
+      "Branding & Identidad Visual",
+      "UX/UI Design",
+      "Dirección de Arte",
+      "Diseño de Interfaces",
+      "Auditoría de Usabilidad",
+      "Email Marketing Design"
+    ]
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "projects": {
+      "capel": {
+        "title": "Capel Pisco",
+        "description": "Director de arte y productor gráfico de los contenidos de redes sociales de Capel Pisco, en la agencia Dittborn & Unzueta, Chile.",
+        "year": "2020 – 2021"
+      },
+      "capelsour": {
+        "title": "CapelSour",
+        "description": "Director de arte y productor gráfico de los contenidos de redes sociales de CapelSour, la línea de cócteles de Capel, en la agencia Dittborn & Unzueta, Chile.",
+        "year": "2020 – 2021"
+      },
+      "stellantis": {
+        "title": "Stellantis",
+        "description": "Director de arte y productor gráfico en las redes sociales de marcas Stellantis en Chile (RAM, Dodge, Jeep y Alfa Romeo), en la agencia Dittborn & Unzueta.",
+        "year": "2020 – 2021"
+      },
+      "avsa": {
+        "title": "AVSA Rent a Car – Rediseño UI/UX",
+        "description": "Rediseño de un sitio web de rent a car en Chiloé, enfocado en la mejora visual y en principios básicos de usabilidad. Incluyó contenido actualizado, una identidad visual más clara, imágenes contextualizadas, un nuevo módulo de FAQ y un canal de contacto directo para facilitar el arriendo.",
+        "year": "2023"
+      },
+      "censo": {
+        "title": "Auditoría de Usabilidad – Censo 2024",
+        "description": "Evaluación heurística y auditoría de usabilidad del sitio del Censo 2024, con análisis web, pruebas de usabilidad y escala SUS.",
+        "year": "2023"
+      },
+      "ux-report": {
+        "title": "Reporte UX – Levantamiento y Sugerencias de Mejora",
+        "description": "Levantamiento inicial de los sitios Carnes A Punto y Carnes a Domicilio para identificar oportunidades de mejora en navegación, contenido y arquitectura. Reúne observaciones clave, buenas prácticas de la competencia y recomendaciones visuales.",
+        "year": "2023"
+      }
+    },
+    "groups": {
+      "ux": "UX/UI",
+      "graphic": "Diseño gráfico"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Cuéntame sobre tu proyecto",
+    "email": "feliperoaf@outlook.com",
+    "cta": "Enviar mensaje"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "behance": "Behance",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "resume": {
+    "title": "Currículum",
+    "experience": "Experiencia",
+    "education": "Educación y certificaciones",
+    "jobs": [
+      {
+        "role": "Director de Arte Digital y Diseñador UX/UI",
+        "org": "Dittborn & Unzueta (Laika)",
+        "years": "2019 – 2025"
+      },
+      {
+        "role": "Director de Arte",
+        "org": "Gentuza",
+        "years": "2018 – 2019"
+      },
+      {
+        "role": "Director de Arte (trainee)",
+        "org": "Wolf BCPP",
+        "years": "2018"
+      }
+    ],
+    "studies": [
+      {
+        "role": "Full Stack JavaScript",
+        "org": "Desafío Latam",
+        "years": "2024 – 2026"
+      },
+      {
+        "role": "Diseño UX/UI",
+        "org": "Desafío Latam",
+        "years": "2019"
+      },
+      {
+        "role": "Publicidad",
+        "org": "Universidad Diego Portales",
+        "years": "2014 – 2018"
+      }
+    ]
+  }
+}
