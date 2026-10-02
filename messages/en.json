@@ -9,12 +9,12 @@
   "hero": {
     "greeting": "Hi, I'm",
     "title": "Felipe Roa",
-    "subtitle": "Art Director, UX/UI Designer & Advertiser",
-    "description": "I transform ideas into impactful visual experiences",
-    "availability": "Based in Australia, open to roles"
+    "availability": "Based in Sydney, open to roles",
+    "slogan": "Bringing a spark of **color** back to the world, one design at a time."
   },
   "about": {
     "title": "About me",
+    "role": "Art Director, UX/UI Designer & Advertiser",
     "bio": "I'm Felipe, a designer with **8 years of experience** in art direction, UX/UI and social media. I've worked on brands like **Stellantis (Jeep, RAM, Dodge and Alfa Romeo), Capel and Banco Santander**, turning briefs into graphic pieces, content and digital experiences. After a break to travel and live in Germany and Denmark, I'm back to design from Australia.",
     "experience": "My expertise includes:",
     "skills": [

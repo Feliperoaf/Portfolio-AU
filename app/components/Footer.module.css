@@ -4,8 +4,9 @@
 .info h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; letter-spacing: -0.04em; }
 .info p { color: var(--muted); font-weight: 400; }
 .social { display: flex; gap: 0.6rem; }
-.social a { width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--fg); transition: background 200ms, color 200ms, border-color 200ms; }
-.social a:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.social a { width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--fg); transition: background 200ms var(--ease-out), color 200ms var(--ease-out), border-color 200ms var(--ease-out), transform 160ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .social a:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); } }
+.social a:active { transform: scale(0.95); }
 .social a svg { width: 1.05rem; height: 1.05rem; }
 .divider { display: none; }
 .bottom { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-label); font-size: 0.75rem; letter-spacing: 0.05em; color: var(--muted); }

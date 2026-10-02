@@ -28,7 +28,6 @@ function make(l: Locale): CaseStudy {
         blocks: [
           {
             type: 'gallery',
-            note: T('El carrusel se muestra con su primera imagen.', 'The carousel is shown with its first image.'),
             items: [
               { src: `${base}/jeep-01.jpg`, alt: T('Jeep Renegade blanco en un camino de montaña con nieve', 'White Jeep Renegade on a snowy mountain road'), date: '2020-06-18', href: ig('CBjmv3DBlUf'), caption: T('Disfruta de la comodidad y tecnología de #JeepRenegade con los controles de audio integrados al volante. #jeep #offroad #renegade #jeepchile', 'Enjoy the comfort and technology of the #JeepRenegade with audio controls built into the steering wheel. #jeep #offroad #renegade #jeepchile') },
               { src: `${base}/jeep-02.jpg`, href: ig('CRHFq0cLz7t'), alt: T('Pieza de Jeep en Valle Nevado', 'Jeep piece at Valle Nevado'), date: '2021-07-09', videoSrc: '/projects/stellantis/jeep-02.mp4', caption: T('Mantengamos vivo nuestro espíritu aventurero junto a @Valle_Nevado 🏂 #WinterIsJeep', 'Let\'s keep our adventurous spirit alive with @Valle_Nevado 🏂 #WinterIsJeep') },

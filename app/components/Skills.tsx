@@ -8,7 +8,7 @@ const skillsData = [
   { name: 'After Effects', icon: '/icons/After.svg' },
   { name: 'Premiere', icon: '/icons/Premier.svg' },
   { name: 'Lightroom', icon: '/icons/Lightroom.svg' },
-  { name: 'Notion', icon: '/icons/Notion.svg' },
+  { name: 'Claude', icon: '/icons/Claude.svg' },
   { name: 'HTML', icon: '/icons/HTML.svg' },
   { name: 'CSS', icon: '/icons/CSS.svg' },
   { name: 'JavaScript', icon: '/icons/Javascript.svg' },

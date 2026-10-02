@@ -36,7 +36,7 @@ export default function Footer({ locale, social }: FooterProps) {
 
         <div className={styles.bottom}>
           <p>&copy; {currentYear} Felipe Roa. {locale === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}</p>
-          <p className={styles.credit}>{locale === 'es' ? 'Diseñado y desarrollado con ❤️' : 'Designed and built with ❤️'}</p>
+          <p className={styles.credit}>{locale === 'es' ? 'Diseñado y desarrollado desde Australia' : 'Designed and built from Australia'}</p>
         </div>
       </div>
     </footer>

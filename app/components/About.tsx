@@ -2,7 +2,7 @@ import styles from './About.module.css';
 
 interface AboutProps {
   locale: 'es' | 'en';
-  about: { title: string; bio: string; experience: string; skills: string[] };
+  about: { title: string; role: string; bio: string; experience: string; skills: string[] };
 }
 
 export default function About({ about }: AboutProps) {
@@ -10,6 +10,7 @@ export default function About({ about }: AboutProps) {
     <section className={styles.about} id="about">
       <div className={`container ${styles.inner}`}>
         <h2 className="label">{about.title}</h2>
+        <p className={styles.role}>{about.role}</p>
         <p className={styles.bio}>
           {about.bio.split('**').map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part))}
         </p>

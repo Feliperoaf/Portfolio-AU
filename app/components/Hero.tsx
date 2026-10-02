@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 
 interface HeroProps {
   locale: 'es' | 'en';
-  hero: { greeting: string; title: string; subtitle: string; description: string; availability: string };
+  hero: { greeting: string; title: string; slogan: string; availability: string };
 }
 
 export default function Hero({ locale, hero }: HeroProps) {
@@ -10,13 +10,14 @@ export default function Hero({ locale, hero }: HeroProps) {
   return (
     <section className={styles.hero} id="hero">
       <div className={`container ${styles.inner}`}>
-        <p className="label">{hero.greeting}</p>
         <h1 className={styles.title}>
+          <span className="sr-only">{hero.greeting} </span>
           <span>{first}</span> <span className={styles.hl}>{rest.join(' ')}</span>
         </h1>
         <div className={styles.row}>
-          <p className={styles.subtitle}>{hero.subtitle}</p>
-          <p className={styles.description}>{hero.description}</p>
+          <p className={styles.slogan}>
+            {hero.slogan.split('**').map((part, i) => (i % 2 ? <mark key={i} className={styles.spark}>{part}</mark> : part))}
+          </p>
         </div>
         <div className={styles.actions}>
           <a href="#portfolio" className={styles.cta}>

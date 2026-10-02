@@ -1,5 +1,6 @@
 import { DM_Sans } from 'next/font/google';
 import type { Block, CaseStudy as CaseStudyData } from '../../content/types';
+import CaseToc from './CaseToc';
 import styles from './CaseStudy.module.css';
 
 function toneClass(c: string) {
@@ -241,21 +242,15 @@ export default function CaseStudy({ study, locale = 'en' }: { study: CaseStudyDa
           ))}
         </dl>
       )}
-      {study.toc && (
-        <nav aria-label={locale === 'es' ? 'En este caso' : 'In this case'} className={styles.toc}>
-          <ul>
-            {study.toc.map((t) => (
-              <li key={t.id}>
-                <a href={`#${t.id}`}>{t.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
       <div className={styles.hero}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={study.hero.src} alt={study.hero.alt} />
       </div>
+      <div id="case-start" className={study.toc ? styles.layout : undefined}>
+        {study.toc && (
+          <CaseToc items={study.toc} label={locale === 'es' ? 'En este caso' : 'In this case'} short={locale === 'es' ? 'Índice' : 'Index'} />
+        )}
+        <div className={styles.body}>
       {study.sections.map((s) => (
         <section key={s.id} id={s.id} className={styles.section}>
           <h2 className={styles.h2}>{s.title}</h2>
@@ -263,6 +258,8 @@ export default function CaseStudy({ study, locale = 'en' }: { study: CaseStudyDa
           {s.blocks.map((b, i) => renderBlock(b, i, locale))}
         </section>
       ))}
+        </div>
+      </div>
       {study.source && (
         <p className={styles.source}>
           <a href={study.source.href} target="_blank" rel="noopener noreferrer">

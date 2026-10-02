@@ -5,8 +5,10 @@
 .info { display: flex; flex-direction: column; gap: 1.25rem; }
 .contact h2 { font-size: clamp(2.5rem, 7vw, 6rem); font-weight: 800; letter-spacing: -0.055em; line-height: 0.92; }
 .subtitle { color: var(--accent-ink); opacity: 0.7; font-size: clamp(1.05rem, 1.6vw, 1.3rem); font-weight: 400; }
-.emailLink { min-height: 2.75rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; font-size: clamp(1.25rem, 2.6vw, 2.25rem); font-weight: 600; letter-spacing: -0.035em; border-bottom: 2px solid var(--accent-ink); padding-bottom: 0.6rem; overflow-wrap: anywhere; transition: background 250ms, color 250ms, padding 250ms; }
-.emailLink:hover { background: var(--accent-ink); color: var(--accent); border-bottom-color: var(--accent-ink); padding-inline: 0.75rem; }
-.arrow { transition: transform 250ms; flex: none; }
-.emailLink:hover .arrow { transform: translateX(4px); }
+.emailLink { min-height: 2.75rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; font-size: clamp(1.25rem, 2.6vw, 2.25rem); font-weight: 600; letter-spacing: -0.035em; border-bottom: 2px solid var(--accent-ink); padding: 0 0.75rem 0.6rem; margin-inline: -0.75rem; overflow-wrap: anywhere; transition: background 200ms var(--ease-out), color 200ms var(--ease-out), transform 160ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .emailLink:hover { background: var(--accent-ink); color: var(--accent); border-bottom-color: var(--accent-ink); } }
+.emailLink:active { transform: scale(0.98); }
+.arrow { transition: transform 200ms var(--ease-out); flex: none; }
+@media (hover: hover) and (pointer: fine) { .emailLink:hover .arrow { transform: translateX(4px); } }
 @media (max-width: 768px) { .container { grid-template-columns: minmax(0, 1fr); align-items: start; } }
+@media (prefers-reduced-motion: reduce) { .emailLink:hover .arrow, .emailLink:active { transform: none; } }

@@ -11,6 +11,8 @@
   --logo-filter: none;
   --font-body: var(--font-sans), system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-label: var(--font-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --gutter: clamp(1.25rem, 5vw, 4rem);
   --max: 1240px;
   color-scheme: light;
@@ -58,6 +60,6 @@ p { color: var(--fg); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
 [id] { scroll-margin-top: 4.5rem; }
