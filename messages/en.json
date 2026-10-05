@@ -29,6 +29,11 @@
   "portfolio": {
     "title": "Portfolio",
     "projects": {
+      "driftler": {
+        "title": "Driftler – Working Holiday Community",
+        "description": "A bulletin board for travellers on a Working Holiday visa: accommodation, temporary work and travel companions. I designed and built the whole product, from visual identity to code, coding with AI.",
+        "year": "2026"
+      },
       "capel": {
         "title": "Capel Pisco",
         "description": "Art director and graphic producer for the social media content of Capel Pisco, at the agency Dittborn & Unzueta, Chile.",
@@ -61,6 +66,7 @@
       }
     },
     "groups": {
+      "personal": "Personal projects",
       "ux": "UX/UI",
       "graphic": "Graphic design"
     }

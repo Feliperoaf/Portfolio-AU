@@ -4,11 +4,13 @@ import { uxReport } from './ux-report';
 import { capel } from './capel';
 import { capelsour } from './capelsour';
 import { stellantis } from './stellantis';
+import { driftler } from './driftler';
 import type { CaseStudy, Locale } from './types';
 
-const studies: Record<string, Record<Locale, CaseStudy>> = { avsa, censo, 'ux-report': uxReport, capel, capelsour, stellantis };
+const studies: Record<string, Record<Locale, CaseStudy>> = { avsa, censo, 'ux-report': uxReport, capel, capelsour, stellantis, driftler };
 
 const sources: Record<string, { name: string; href: string }> = {
+  driftler: { name: 'Driftler', href: 'https://driftler.com' },
   avsa: { name: 'Behance', href: 'https://www.behance.net/gallery/238749757/AVSA-Rent-a-Car-Rediseno-UIUX' },
   censo: { name: 'Behance', href: 'https://www.behance.net/gallery/238511111/Auditoria-de-Usabilidad-Censo-2024' },
   'ux-report': { name: 'Behance', href: 'https://www.behance.net/gallery/239290895/Reporte-UX-Levantamiento-y-Sugerencias-de-Mejora' },
