@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -12,6 +13,11 @@ import es from '../../messages/es.json';
 import en from '../../messages/en.json';
 
 const messages = { es, en };
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: { canonical: `/${locale}`, languages: { es: '/es', en: '/en' } } };
+}
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

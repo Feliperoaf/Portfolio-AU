@@ -32,37 +32,65 @@
       "driftler": {
         "title": "Driftler – Working Holiday Community",
         "description": "A bulletin board for travellers on a Working Holiday visa: accommodation, temporary work and travel companions. I designed and built the whole product, from visual identity to code, coding with AI.",
-        "year": "2026"
+        "year": "2026",
+        "seo": {
+          "title": "Driftler: Working Holiday Job & Housing Board | Felipe Roa",
+          "description": "Case study of Driftler, a bulletin board for Working Holiday travellers to find housing, temporary work and travel mates. Designed and built by Felipe Roa."
+        }
       },
       "capel": {
         "title": "Capel Pisco",
         "description": "Art director and graphic producer for the social media content of Capel Pisco, at the agency Dittborn & Unzueta, Chile.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "Capel Pisco Social Media Art Direction | Felipe Roa",
+          "description": "Art direction and graphic production for Capel Pisco's social media at Dittborn & Unzueta, Chile, 2020–2021. Posts and videos by Felipe Roa."
+        }
       },
       "capelsour": {
         "title": "CapelSour",
         "description": "Art director and graphic producer for the social media content of CapelSour, Capel's cocktail line, at the agency Dittborn & Unzueta, Chile.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "CapelSour Cocktail Social Media Design | Felipe Roa",
+          "description": "Art direction and graphic production for CapelSour, Capel's cocktail line, on social media at Dittborn & Unzueta, Chile, 2020–2021."
+        }
       },
       "stellantis": {
         "title": "Stellantis",
         "description": "Art director and graphic producer on the social media of Stellantis brands in Chile (RAM, Dodge, Jeep and Alfa Romeo), at the agency Dittborn & Unzueta.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "Stellantis Social Media Art Direction: Jeep & RAM | Felipe Roa",
+          "description": "Art direction and graphic production for Jeep and RAM social media in Chile at Dittborn & Unzueta, 2020–2021, within work for Stellantis brands."
+        }
       },
       "avsa": {
         "title": "AVSA Rent a Car – UI/UX Redesign",
         "description": "Redesign of a car rental website in Chiloé, focused on visual improvement and basic usability principles. It included updated content, a clearer visual identity, contextual imagery, a new FAQ module and a direct contact channel to make renting easier.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "AVSA Rent a Car UX/UI Redesign: Case Study | Felipe Roa",
+          "description": "UX/UI redesign case study for AVSA Rent a Car, a car rental site in Chiloé: clearer identity, a new FAQ module and a direct contact channel. By Felipe Roa."
+        }
       },
       "censo": {
         "title": "Usability Audit – Census 2024",
         "description": "Heuristic evaluation and usability audit of the Census 2024 website, including web analysis, usability testing and the SUS scale.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "Census 2024 Usability Audit: Heuristics & SUS | Felipe Roa",
+          "description": "Usability audit of the Census 2024 website: Nielsen's 10 heuristics, user testing and the SUS scale. A UX case study by Felipe Roa."
+        }
       },
       "ux-report": {
         "title": "UX Report – Findings and Improvement Suggestions",
         "description": "Initial review of the Carnes A Punto and Carnes a Domicilio websites to identify opportunities to improve navigation, content and architecture. It gathers key observations, competitor best practices and visual recommendations.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "UX Report for Carnes A Punto: Findings & Fixes | Felipe Roa",
+          "description": "UX review of the Carnes A Punto and Carnes a Domicilio websites: navigation, content and architecture findings, competitor practices and visual recommendations."
+        }
       }
     },
     "groups": {

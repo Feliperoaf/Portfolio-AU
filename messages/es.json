@@ -32,37 +32,65 @@
       "driftler": {
         "title": "Driftler – Comunidad Working Holiday",
         "description": "Tablón de avisos para viajeros con visa Working Holiday: alojamiento, trabajo temporal y compañeros de ruta. Diseñé y construí el producto completo, de la identidad visual al código, programando con IA.",
-        "year": "2026"
+        "year": "2026",
+        "seo": {
+          "title": "Driftler: tablón Working Holiday | Felipe Roa",
+          "description": "Caso de Driftler, tablón para viajeros Working Holiday: alojamiento, trabajo temporal y compañeros de ruta. Diseño y desarrollo de Felipe Roa."
+        }
       },
       "capel": {
         "title": "Capel Pisco",
         "description": "Director de arte y productor gráfico de los contenidos de redes sociales de Capel Pisco, en la agencia Dittborn & Unzueta, Chile.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "Capel Pisco: dirección de arte en redes | Felipe Roa",
+          "description": "Dirección de arte y producción gráfica de las redes sociales de Capel Pisco en Dittborn & Unzueta, Chile, 2020–2021. Piezas y videos de Felipe Roa."
+        }
       },
       "capelsour": {
         "title": "CapelSour",
         "description": "Director de arte y productor gráfico de los contenidos de redes sociales de CapelSour, la línea de cócteles de Capel, en la agencia Dittborn & Unzueta, Chile.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "CapelSour: diseño para redes sociales | Felipe Roa",
+          "description": "Dirección de arte y producción gráfica de CapelSour, la línea de cocteles de Capel, en redes sociales, en Dittborn & Unzueta, Chile, 2020–2021."
+        }
       },
       "stellantis": {
         "title": "Stellantis",
         "description": "Director de arte y productor gráfico en las redes sociales de marcas Stellantis en Chile (RAM, Dodge, Jeep y Alfa Romeo), en la agencia Dittborn & Unzueta.",
-        "year": "2020 – 2021"
+        "year": "2020 – 2021",
+        "seo": {
+          "title": "Stellantis: arte en redes, Jeep y RAM | Felipe Roa",
+          "description": "Dirección de arte y producción gráfica para las redes de Jeep y RAM en Chile, en Dittborn & Unzueta, 2020–2021, dentro del trabajo para marcas Stellantis."
+        }
       },
       "avsa": {
         "title": "AVSA Rent a Car – Rediseño UI/UX",
         "description": "Rediseño de un sitio web de rent a car en Chiloé, enfocado en la mejora visual y en principios básicos de usabilidad. Incluyó contenido actualizado, una identidad visual más clara, imágenes contextualizadas, un nuevo módulo de FAQ y un canal de contacto directo para facilitar el arriendo.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "Rediseño UX/UI de AVSA Rent a Car: caso | Felipe Roa",
+          "description": "Caso de rediseño UX/UI para AVSA Rent a Car, arriendo de autos en Chiloé: identidad más clara, módulo de preguntas frecuentes y contacto directo. Por Felipe Roa."
+        }
       },
       "censo": {
         "title": "Auditoría de Usabilidad – Censo 2024",
         "description": "Evaluación heurística y auditoría de usabilidad del sitio del Censo 2024, con análisis web, pruebas de usabilidad y escala SUS.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "Auditoría de usabilidad Censo 2024 y SUS | Felipe Roa",
+          "description": "Auditoría de usabilidad del sitio del Censo 2024: 10 heurísticas de Nielsen, pruebas con usuarios y escala SUS. Caso UX de Felipe Roa."
+        }
       },
       "ux-report": {
         "title": "Reporte UX – Levantamiento y Sugerencias de Mejora",
         "description": "Levantamiento inicial de los sitios Carnes A Punto y Carnes a Domicilio para identificar oportunidades de mejora en navegación, contenido y arquitectura. Reúne observaciones clave, buenas prácticas de la competencia y recomendaciones visuales.",
-        "year": "2023"
+        "year": "2023",
+        "seo": {
+          "title": "Reporte UX Carnes A Punto: hallazgos y mejoras | Felipe Roa",
+          "description": "Revisión UX de los sitios Carnes A Punto y Carnes a Domicilio: navegación, contenido y arquitectura, buenas prácticas de la competencia y recomendaciones visuales."
+        }
       }
     },
     "groups": {

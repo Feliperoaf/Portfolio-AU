@@ -25,14 +25,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (locale !== 'es' && locale !== 'en') return {};
-  const project = (messages[locale as Locale].portfolio.projects as Record<string, { title: string; description: string }>)[slug];
+  const project = (messages[locale as Locale].portfolio.projects as Record<string, { title: string; description: string; seo?: { title: string; description: string } }>)[slug];
   if (!project) return {};
   const image = getCaseStudy(slug, locale as Locale)?.hero.src ?? getProjectImages(slug, locale as Locale)[0];
-  const title = `${project.title} – Felipe Roa`;
+  const title = project.seo?.title ?? `${project.title} – Felipe Roa`;
+  const description = project.seo?.description ?? project.description;
   return {
     title,
-    description: project.description,
-    openGraph: { title, description: project.description, type: 'article', images: image ? [{ url: image }] : undefined },
+    description,
+    alternates: {
+      canonical: `/${locale}/projects/${slug}`,
+      languages: { es: `/es/projects/${slug}`, en: `/en/projects/${slug}` },
+    },
+    openGraph: { title, description, type: 'article', images: image ? [{ url: image }] : undefined },
     twitter: { card: 'summary_large_image' },
   };
 }

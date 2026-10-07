@@ -12,7 +12,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portfolio-au-gamma.vercel.app';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.froa.digital';
 
 const copy = {
   es: {
