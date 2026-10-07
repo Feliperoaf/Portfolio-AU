@@ -1,4 +1,3 @@
-import { DM_Sans } from 'next/font/google';
 import type { Block, CaseStudy as CaseStudyData } from '../../content/types';
 import CaseToc from './CaseToc';
 import styles from './CaseStudy.module.css';
@@ -10,8 +9,6 @@ function toneClass(c: string) {
   const n = parseInt(m[1], 10);
   return n >= 75 ? styles.t3 : n >= 50 ? styles.t2 : styles.t1;
 }
-
-const dmSans = DM_Sans({ subsets: ['latin'], weight: ['500', '600', '700'] });
 
 function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
   switch (block.type) {
@@ -55,7 +52,7 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
       );
     case 'typescale':
       return (
-        <div key={key} className={`${styles.typeBox} ${dmSans.className}`}>
+        <div key={key} className={`${styles.typeBox} ${styles.dm}`}>
           <div className={styles.typeHead}>
             <span className={styles.ag}>Ag</span>
             <div>
@@ -84,7 +81,7 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
               {b.states.map((s) => (
                 <div key={s.state} className={styles.buttonState}>
                   <span
-                    className={`${styles.demoBtn} ${dmSans.className}`}
+                    className={`${styles.demoBtn} ${styles.dm}`}
                     style={{ background: s.bg, color: s.text, boxShadow: s.ring ? `0 0 0 3px #0e0e0e, 0 0 0 5px ${s.ring}` : undefined }}
                   >
                     {b.label}
