@@ -22,6 +22,7 @@ function make(l: Locale): CaseStudy {
     toc: [
       { id: 'idea', label: T('La idea', 'The idea') },
       { id: 'decisions', label: T('Decisiones de producto', 'Product decisions') },
+      { id: 'guides', label: T('Guías de visa', 'Visa guides') },
       { id: 'identity', label: T('Identidad visual', 'Visual identity') },
       { id: 'screens', label: T('Pantallas', 'Screens') },
       { id: 'process', label: T('Cómo lo hice', 'How I built it') },
@@ -47,7 +48,7 @@ function make(l: Locale): CaseStudy {
               { title: T('Explorar sin cuenta', 'Browse without an account'), text: T('Se ve el aviso completo sin registrarse. La cuenta, gratuita, sirve para guardar avisos, seguir destinos y contactar.', 'The full ad is visible without signing up. The free account is for saving ads, following destinations and getting in touch.') },
               { title: T('Privacidad por defecto', 'Private by default'), text: T('El correo nunca se muestra. De ti solo se comparte tu WhatsApp, cuando contactas o te contactan.', 'Your email is never shown. Only your WhatsApp is shared, when you contact someone or they contact you.') },
               { title: T('Categorías concretas', 'Concrete categories'), text: T('Alojamiento, trabajo, social y rutas, y otro. Se filtra por categoría o se busca por palabra clave o ciudad.', 'Accommodation, work, social and routes, and other. Filter by category or search by keyword or city.') },
-              { title: T('Destinos y favoritos', 'Destinations and favourites'), text: T('Se sigue un país para ver lo último de ese lugar en la sección «Para ti» y se guardan avisos con una estrella.', 'You follow a country to see its latest ads in the “For you” section, and save ads with a star.') },
+              { title: T('Destinos y favoritos', 'Destinations and favourites'), text: T('Hay diez destinos con avisos de la comunidad. Se sigue un país para ver lo último de ese lugar en la sección «Para ti» y se guardan avisos con una estrella.', 'There are ten destinations with community ads. You follow a country to see its latest ads in the “For you” section, and save ads with a star.') },
               { title: T('Consejos para viajar tranquilo', 'Tips to travel safely'), text: T('Una guía visible advierte contra pagos por adelantado, depósitos sin contrato y cobros por dar trabajo.', 'A visible guide warns against upfront payments, deposits without a contract and fees for giving someone a job.') },
             ],
           },
@@ -61,6 +62,34 @@ function make(l: Locale): CaseStudy {
               T('Contacta por WhatsApp con el aviso ya adjunto, o publica el tuyo con hasta 5 fotos y los días que durará.', 'Get in touch on WhatsApp with the ad already attached, or post your own with up to 5 photos and how many days it will run.'),
             ],
           },
+        ],
+      },
+      {
+        id: 'guides',
+        title: T('Guías de visa según tu pasaporte', 'Visa guides by passport'),
+        subtitle: T('Ayuda para decidir a dónde ir, antes de buscar trabajo o alojamiento.', 'Help deciding where to go, before looking for work or housing.'),
+        blocks: [
+          { type: 'p', text: T('La visa Working Holiday cambia según el pasaporte: edad, cupos y trabajo permitido no son iguales para todos. Por eso Driftler suma guías de visa por pasaporte (Chile, Argentina, España, Perú, México y Colombia) y por destino, cada una con su fuente oficial y su fecha de revisión.', 'The Working Holiday visa changes with the passport: age, quotas and permitted work are not the same for everyone. That is why Driftler adds visa guides by passport (Chile, Argentina, Spain, Peru, Mexico and Colombia) and by destination, each with its official source and review date.') },
+          { type: 'p', text: T('El buscador responde la pregunta más común: ¿a qué países puedo ir? Se elige el pasaporte y la edad, y se comparan los destinos lado a lado.', 'The finder answers the most common question: which countries can I go to? You pick your passport and age, and compare destinations side by side.') },
+          {
+            type: 'stats',
+            items: [
+              { value: '6', label: T('pasaportes con guías', 'passports with guides') },
+              { value: '10', label: T('destinos con avisos de la comunidad', 'destinations with community ads') },
+              { value: '9', label: T('guías de destino para pasaporte chileno', 'destination guides for Chilean passports') },
+            ],
+          },
+          { type: 'h3', text: T('Qué muestra cada destino', 'What each destination shows') },
+          {
+            type: 'list',
+            items: [
+              T('El tipo de visa, por ejemplo Visa 462 en Australia o IEC en Canadá.', 'The visa type, for example Visa 462 in Australia or IEC in Canada.'),
+              T('El rango de edad exigido al momento de solicitar.', 'The age range required when applying.'),
+              T('La duración de la visa.', 'How long the visa lasts.'),
+              T('El enlace a la fuente oficial y la fecha en que se revisó la guía.', 'A link to the official source and the date the guide was reviewed.'),
+            ],
+          },
+          { type: 'note', text: T('Cifras al 8 de octubre de 2026. Las guías son informativas y no reemplazan la asesoría de un profesional de migración: cada una pide confirmar en el sitio oficial antes de pagar o viajar.', 'Figures as of 8 October 2026. The guides are informational and do not replace advice from a migration professional: each one asks you to confirm on the official site before paying or travelling.') },
         ],
       },
       {
@@ -90,7 +119,7 @@ function make(l: Locale): CaseStudy {
         id: 'screens',
         title: T('Pantallas', 'Screens'),
         blocks: [
-          { type: 'image', src: `${base}/home-sections.jpg`, alt: T('Página de inicio completa: titular con el pase de embarque, franja de categorías, secciones «Los avisos caducan» y «Nadie se salva solo», lista de lo que ofrece y llamado a unirse', 'Full home page: headline with the boarding pass, category ticker, the “Ads expire” and “Nobody saves themselves alone” sections, the list of what it offers and a call to join'), caption: T('Inicio: promesa, reglas del juego y categorías.', 'Home: the promise, the rules of the game and the categories.') },
+          { type: 'image', src: `${base}/home-sections.jpg`, alt: T('Página de inicio completa: titular con el pase de embarque, franja de categorías, secciones «Los avisos caducan» y «Nadie se salva solo», lista de lo que ofrece y llamado a unirse', 'Full home page: headline with the boarding pass, category ticker, the “Ads expire” and “Nobody saves themselves alone” sections, the list of what it offers, the visa finder and a call to join'), caption: T('Inicio: promesa, reglas del juego y categorías.', 'Home: the promise, the rules of the game and the categories.') },
           { type: 'image', src: `${base}/como-funciona.jpg`, alt: T('Página «Cómo funciona Driftler» sobre fondo naranja, con el resumen de tres puntos', 'The “How Driftler works” page on an orange background, with the three-point summary'), caption: T('Cómo funciona: lo esencial en tres líneas, antes de los cuatro pasos.', 'How it works: the essentials in three lines, before the four steps.') },
           { type: 'image', src: `${base}/mobile.jpg`, alt: T('Portada de Driftler en móvil con el titular, dos botones y el pase de embarque', 'Driftler home page on mobile with the headline, two buttons and the boarding pass'), caption: T('En móvil: menú compacto y llamado a crear cuenta siempre a mano.', 'On mobile: compact menu and a create-account button always within reach.'), width: 380 },
         ],
