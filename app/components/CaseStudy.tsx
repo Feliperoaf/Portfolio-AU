@@ -192,9 +192,11 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
                   <img src={g.src} alt={g.alt} loading="lazy" />
                 )}
                 <figcaption>
-                  <time dateTime={g.date}>
-                    {new Date(g.date + 'T12:00:00Z').toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
-                  </time>
+                  {g.date && (
+                    <time dateTime={g.date}>
+                      {new Date(g.date + 'T12:00:00Z').toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
+                    </time>
+                  )}
                   <span>{g.caption}</span>
                   {g.href && (
                     <a href={g.href} target="_blank" rel="noopener noreferrer">

@@ -15,7 +15,7 @@ export type Block =
   | { type: 'survey'; groups: { question: string; items: { quote: string; insight: string }[] }[] }
   | { type: 'groups'; items: { title: string; points: string[] }[] }
   | { type: 'quote'; text: string; cite: string }
-  | { type: 'gallery'; items: { src: string; alt: string; caption: string; date: string; videoSrc?: string; href?: string }[]; note?: string }
+  | { type: 'gallery'; items: { src: string; alt: string; caption: string; date?: string; videoSrc?: string; href?: string }[]; note?: string }
   | { type: 'image'; src: string; alt: string; caption?: string; cropTop?: number; width?: number };
 
 export type Section = { id: string; title: string; subtitle?: string; blocks: Block[] };
