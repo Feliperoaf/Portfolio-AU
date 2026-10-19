@@ -197,6 +197,7 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
                       {new Date(g.date + 'T12:00:00Z').toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
                     </time>
                   )}
+                  {!g.date && g.period && <time>{g.period}</time>}
                   <span>{g.caption}</span>
                   {g.href && (
                     <a href={g.href} target="_blank" rel="noopener noreferrer">
@@ -209,6 +210,13 @@ function renderBlock(block: Block, key: number, locale: 'es' | 'en') {
           </div>
           {block.note && <p className={styles.caption}>{block.note}</p>}
         </div>
+      );
+    case 'code':
+      return (
+        <figure key={key} className={styles.code}>
+          {block.label && <figcaption>{block.label}</figcaption>}
+          <pre tabIndex={0}><code>{block.text}</code></pre>
+        </figure>
       );
     case 'image':
       return (

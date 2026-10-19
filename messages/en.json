@@ -38,6 +38,15 @@
           "description": "Case study of Driftler, a bulletin board for Working Holiday travellers to find housing, temporary work and travel mates. Designed and built by Felipe Roa."
         }
       },
+      "driftler-video": {
+        "title": "Driftler – Generative AI Videos",
+        "description": "Two vertical reels to introduce Driftler, made with generative AI: from the script and images to the video, sound and edit, with the prompts and what went wrong.",
+        "year": "2026",
+        "seo": {
+          "title": "Driftler: Two Generative AI Videos | Felipe Roa",
+          "description": "Case study of two vertical reels made with generative AI: script, a consistent character, images with Gemini and ChatGPT, clips with Flow and Kling 3, prompts and edit."
+        }
+      },
       "capel": {
         "title": "Capel Pisco",
         "description": "Art director and graphic producer for the social media content of Capel Pisco, at the agency Dittborn & Unzueta, Chile.",
@@ -95,6 +104,7 @@
     },
     "groups": {
       "personal": "Personal projects",
+      "aivideo": "Generative AI video",
       "ux": "UX/UI",
       "graphic": "Graphic design"
     }

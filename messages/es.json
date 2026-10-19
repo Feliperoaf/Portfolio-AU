@@ -38,6 +38,15 @@
           "description": "Caso de Driftler, tablón para viajeros Working Holiday: alojamiento, trabajo temporal y compañeros de ruta. Diseño y desarrollo de Felipe Roa."
         }
       },
+      "driftler-video": {
+        "title": "Driftler – Videos con IA generativa",
+        "description": "Dos reels verticales para dar a conocer Driftler, hechos con IA generativa: del guion y las imágenes al video, el sonido y el montaje, con los prompts y lo que salió mal.",
+        "year": "2026",
+        "seo": {
+          "title": "Driftler: dos videos con IA generativa | Felipe Roa",
+          "description": "Caso de dos reels verticales hechos con IA generativa: guion, personaje consistente, imágenes con Gemini y ChatGPT, clips con Flow y Kling 3, prompts y montaje."
+        }
+      },
       "capel": {
         "title": "Capel Pisco",
         "description": "Director de arte y productor gráfico de los contenidos de redes sociales de Capel Pisco, en la agencia Dittborn & Unzueta, Chile.",
@@ -95,6 +104,7 @@
     },
     "groups": {
       "personal": "Proyectos personales",
+      "aivideo": "Video con IA generativa",
       "ux": "UX/UI",
       "graphic": "Diseño gráfico"
     }

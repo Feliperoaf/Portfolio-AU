@@ -3,7 +3,7 @@ import path from 'path';
 
 export type Locale = 'es' | 'en';
 
-export const projectSlugs = ['driftler', 'capel', 'capelsour', 'stellantis', 'avsa', 'censo', 'ux-report'] as const;
+export const projectSlugs = ['driftler', 'driftler-video', 'capel', 'capelsour', 'stellantis', 'avsa', 'censo', 'ux-report'] as const;
 export type ProjectSlug = (typeof projectSlugs)[number];
 
 const IMAGE_RE = /\.(png|jpe?g|webp|avif|gif)$/i;
@@ -37,8 +37,9 @@ export const collaborators: Record<string, Collaborator[]> = {
   'ux-report': [marieGarrido],
 };
 
-export const projectGroup: Record<string, { key: 'ux' | 'graphic' | 'personal'; anchor: string }> = {
+export const projectGroup: Record<string, { key: 'ux' | 'graphic' | 'personal' | 'aivideo'; anchor: string }> = {
   driftler: { key: 'personal', anchor: 'personal-projects' },
+  'driftler-video': { key: 'aivideo', anchor: 'ai-video' },
   avsa: { key: 'ux', anchor: 'ux-ui' },
   censo: { key: 'ux', anchor: 'ux-ui' },
   'ux-report': { key: 'ux', anchor: 'ux-ui' },

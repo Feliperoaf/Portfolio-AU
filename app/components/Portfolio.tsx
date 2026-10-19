@@ -6,13 +6,14 @@ interface PortfolioProps {
   covers?: Record<string, string | undefined>;
   portfolio: {
     title: string;
-    groups: { ux: string; graphic: string; personal: string };
+    groups: { ux: string; graphic: string; personal: string; aivideo: string };
     projects: { [key: string]: { title: string; description: string; year: string } };
   };
 }
 
 const GROUPS = [
   { id: 'personal-projects', key: 'personal', slugs: ['driftler'] },
+  { id: 'ai-video', key: 'aivideo', slugs: ['driftler-video'] },
   { id: 'ux-ui', key: 'ux', slugs: ['avsa', 'censo', 'ux-report'] },
   { id: 'graphic-design', key: 'graphic', slugs: ['capel', 'capelsour', 'stellantis'] },
 ] as const;

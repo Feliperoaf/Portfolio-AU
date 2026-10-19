@@ -5,9 +5,10 @@ import { capel } from './capel';
 import { capelsour } from './capelsour';
 import { stellantis } from './stellantis';
 import { driftler } from './driftler';
+import { driftlerVideo } from './driftler-video';
 import type { CaseStudy, Locale } from './types';
 
-const studies: Record<string, Record<Locale, CaseStudy>> = { avsa, censo, 'ux-report': uxReport, capel, capelsour, stellantis, driftler };
+const studies: Record<string, Record<Locale, CaseStudy>> = { avsa, censo, 'ux-report': uxReport, capel, capelsour, stellantis, driftler, 'driftler-video': driftlerVideo };
 
 const sources: Record<string, { name: string; href: string }> = {
   driftler: { name: 'Driftler', href: 'https://driftler.com' },
